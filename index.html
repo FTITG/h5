@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
     <style>
         input{
             width:300px;
@@ -24,7 +24,7 @@
         <p>学号：</p>
         <input type="text" name="no" required placeholder="请输入学号"/><div class="must">*</div>
         <p>手机号码：</p>
-        <input type="text" name="phoneno" required placeholder="请输入手机号"/><div class="must">*</div>
+        <input type="tel" name="phoneno" required placeholder="请输入手机号"/><div class="must">*</div>
         <p>邮箱地址：</p>
         <input type="email" name="address" required placeholder="请输入邮箱地址"/><div class="must">*</div>
         <p>录取学校：</p>
@@ -35,7 +35,7 @@
             <option value="河北医科大学"/>
         </datalist>
         <p>入学成绩：</p>
-        <input type="text"/>
+        <input type="number" name="score" min="0" max="750" step="10"/>
         <p>入学时间：</p>
         <input type="date" name="date" /><br/><br/>
         <input type="submit" value="提交" />
